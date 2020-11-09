@@ -1,6 +1,3 @@
-
-Note: This version of README contains some of things that will be done at a later point. My goal was to make a template which will remind me of the things that I needed to be mindfull of and implement. The final version will be pushed when the site is complete or earlier and will not contain any future tense and comments.
-
 <!-- Add ami responsive -->
 
 # King Gym
@@ -19,21 +16,17 @@ This is the first project in Code Institute Full Stack Developer program based o
 
 ### Wireframes
 
-- [Homepage](assets/images/homepage.png )
-- [Memberships](assets/images/memberships.png )
-- [Signup](assets/images/signup.png )
+- [Homepage](assets/images/homepage.png)
+- [Memberships](assets/images/memberships.png)
+- [Signup](assets/images/signup.png)
 
-### Fonts
-
-<!-- add -->
+<!-- ### Fonts -->
 
 ### Colours
 
 I have decided to have three gym locations with different colour themes. I have chosen a colour pallete which worked well and was used across most pages.
 
-## Features
-
-<!-- add -->
+<!-- ## Features -->
 
 ## Tehnologies used
 
@@ -45,19 +38,17 @@ I have decided to have three gym locations with different colour themes. I have 
 
 ##### Tools
 
-* [Github](https://www.gitpod.io/) - hosting platform for managing repositories and more
-* [Gitpod](https://www.gitpod.io/) - coding enviroment
-* [Git](https://git-scm.com/) - used for version control
-* [Google Fonts](https://fonts.google.com/) - source of all fonts on the website
-* [Adobe XD](https://www.adobe.com/ie/products/xd.html) - used for frameworks
-* [Am I responsive](http://ami.responsivedesign.is/) - website look comparison above the project title
-* [Color palletes](https://colorpalettes.net/) - inspiration from which the main pallete theme was taken
+- [Github](https://www.gitpod.io/) - hosting platform for managing repositories and more
+- [Gitpod](https://www.gitpod.io/) - coding enviroment
+- [Git](https://git-scm.com/) - used for version control
+- [Google Fonts](https://fonts.google.com/) - source of all fonts on the website
+- [Adobe XD](https://www.adobe.com/ie/products/xd.html) - used for frameworks
+- [Am I responsive](http://ami.responsivedesign.is/) - website look comparison above the project title
+- [Color palletes](https://colorpalettes.net/) - inspiration from which the main pallete theme was taken
 
 ## Testing
 
-### Responsiveness
-
-<!-- add -->
+<!-- ### Responsiveness -->
 
 ### Browser Compatibility
 
@@ -72,13 +63,9 @@ All code will be tested using W3C validation service.
 
 Website will be tested using WAVE accessibility assesment tool.
 
-### Bugs
+<!-- ### Bugs -->
 
-<!-- add -->
-
-## Deployment
-
-<!-- add -->
+<!-- ## Deployment -->
 
 ## Credits
 
