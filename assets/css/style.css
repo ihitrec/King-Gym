@@ -1,9 +1,17 @@
+/* START -------------------------------------------------------- Global style */
+
 @import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Satisfy&family=Yellowtail&display=swap");
 
-/* START --------------------------------- Header style */
-
 body {
-  background-color: #333333;
+  height: 2000px;
+}
+
+/* END ---------------------------------------------------------- Global style */
+
+/* START -------------------------------------------------------- Header style */
+
+.navbar {
+  background-color: transparent;
 }
 
 .logo img {
@@ -14,9 +22,79 @@ body {
 ul {
   margin: 20px 0 0 auto;
 }
-li a {
+.nav-link {
   color: white !important;
+  font-family: "Yellowtail", sans-serif;
+  font-weight: 700;
+  font-size: 25px;
+  letter-spacing: 3px;
 }
-.orange-border {
+.orange-navlink-divide {
   border-right: 2px solid orange;
 }
+.nav-bg-color {
+  background-color: #333;
+  position: fixed;
+  height: 120.13px;
+  width: 100%;
+}
+.toggler-bg-color {
+  background-color: #f4f4f4;
+  opacity: 0.7;
+}
+.navbar-collapse {
+  text-align: center;
+}
+
+/* END ---------------------------------------------------------- Header style */
+
+/* START -------------------------------------------------------- Video style */
+.training-video {
+  height: 500px;
+  width: 100%;
+  position: absolute;
+  top: 0;
+}
+.training-video video {
+  height: auto;
+  width: 100%;
+  object-fit: cover;
+}
+
+/* END ---------------------------------------------------------- Video style */
+
+/* START -------------------------------------------------------- Media query */
+
+/* navbar and toggler responsive on mobile  */
+@media only screen and (max-width: 767px) {
+  .training-video video {
+    margin-top: 120.13px;
+  }
+  .toggler-bg-color {
+    background-color: #d98100;
+  }
+  .navbar {
+    padding: 0;
+  }
+  .logo {
+    margin-left: 16px;
+  }
+  .navbar-toggler {
+    margin-right: 16px;
+    margin-top: 22px;
+  }
+  .navbar-collapse {
+    background-color: #333;
+    height: 100vh;
+  }
+  .orange-navlink-divide {
+    border-right: none;
+    border-bottom: 2px solid orange;
+  }
+  li {
+    margin: 40px auto 0;
+    width: 200px;
+  }
+}
+
+/* END ------------------------------------------------------------ Media query */
