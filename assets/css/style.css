@@ -1,4 +1,22 @@
-body{
-    height: 1000px;
-    background-color: red;
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Satisfy&family=Yellowtail&display=swap");
+
+/* START --------------------------------- Header style */
+
+body {
+  background-color: #333333;
+}
+
+.logo img {
+  height: 94.125px;
+  width: 168.75px;
+}
+
+ul {
+  margin: 20px 0 0 auto;
+}
+li a {
+  color: white !important;
+}
+.orange-border {
+  border-right: 2px solid orange;
 }

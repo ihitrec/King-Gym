@@ -16,9 +16,9 @@ This is the first project in Code Institute Full Stack Developer program based o
 
 ### Wireframes
 
-- [Homepage](assets/images/homepage.png)
-- [Memberships](assets/images/memberships.png)
-- [Signup](assets/images/signup.png)
+- [Homepage](assets/images/images_README/homepage.png)
+- [Memberships](assets/images/images_README/memberships.png)
+- [Signup](assets/images/images_README/signup.png)
 
 <!-- ### Fonts -->
 
