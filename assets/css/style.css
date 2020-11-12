@@ -91,6 +91,7 @@ h1 span {
   bottom: 35px;
   display: block;
 }
+
 /* END ---------------------------------------------------------- Locations style */
 
 /* START -------------------------------------------------------- Media query */
@@ -102,6 +103,9 @@ h1 span {
   }
   .toggler-bg-color {
     background-color: #d98100;
+  }
+  .nav-bg-color {
+    z-index: 2;
   }
   .navbar {
     padding: 0;
@@ -146,8 +150,11 @@ h1 span {
     height: 176.59px;
   }
   /* location responsive on large screens */
-  h1 {
-    font-size: 50px;
+  .scale {
+    width: 222px;
+    height: 72px;
+    transform: scale(1.5);
+    margin: auto;
   }
 }
 
