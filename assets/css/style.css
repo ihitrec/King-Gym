@@ -1,14 +1,14 @@
 /* START -------------------------------------------------------- Global style */
 
 @import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Satisfy&family=Yellowtail&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Goldman:wght@400;700&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Pacifico&family=Quicksand:wght@300;400;500;600;700&display=swap");
 
 body {
-  height: 2000px;
+  height: 20000px;
   background-color: #f4f4f4;
   font-family: "Yellowtail";
   font-weight: 700;
 }
-
 /* END ---------------------------------------------------------- Global style */
 
 /* START -------------------------------------------------------- Header style */
@@ -40,6 +40,7 @@ ul {
   position: fixed;
   height: 120.13px;
   width: 100%;
+  z-index: 1;
 }
 .toggler-bg-color {
   background-color: #f4f4f4;
@@ -57,6 +58,7 @@ ul {
   width: 100%;
   position: relative;
   top: 0;
+  z-index: 2;
 }
 .training-video video {
   height: auto;
@@ -71,8 +73,8 @@ ul {
 .locations {
   color: #5b5959;
 }
-.locations h1 {
-  margin: 30px auto;
+.scale h1 {
+  margin: 35px auto;
   width: 148px;
 }
 h1 span {
@@ -85,11 +87,40 @@ h1 span {
   height: 3.5px;
   left: 17px;
   right: 10px;
-  z-index: -1;
   position: relative;
   margin: 0 auto;
-  bottom: 35px;
+  bottom: 40px;
   display: block;
+}
+/* location 1 style */
+
+.location1 {
+  background-color: #4b85a8;
+  text-align: right;
+}
+.desktop-blue {
+  width: 57%;
+  height: auto;
+}
+.mobile-blue {
+  display: none;
+}
+.location-text {
+  float: left;
+  color: white;
+  width: 43%;
+  text-align: left;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-top: 50px;
+}
+.location-text h1 {
+  padding-left: 50px;
+  font-family: "Pacifico";
+}
+.location-text p {
+  padding-left: 80px;
+  line-height: 2.5;
+  font-family: "Quicksand";
 }
 
 /* END ---------------------------------------------------------- Locations style */
@@ -98,15 +129,16 @@ h1 span {
 
 /* navbar and toggler responsive on mobile  */
 @media only screen and (max-width: 767px) {
+  .training-video {
+    z-index: 0;
+  }
   .training-video video {
     margin-top: 120.13px;
   }
   .toggler-bg-color {
     background-color: #d98100;
   }
-  .nav-bg-color {
-    z-index: 2;
-  }
+
   .navbar {
     padding: 0;
   }
@@ -119,7 +151,8 @@ h1 span {
   }
   .navbar-collapse {
     background-color: #333;
-    height: 100vh;
+    /* important fixes load glitch */
+    height: 100vh !important;
   }
   li a {
     border-right: none;
@@ -132,6 +165,17 @@ h1 span {
   }
   li a:hover {
     background-color: #d98100;
+  }
+
+  /* Location section */
+
+  .desktop-blue {
+    display: none;
+  }
+
+  .mobile-blue {
+    display: initial;
+    width: 100%;
   }
 }
 
@@ -149,12 +193,15 @@ h1 span {
   .nav-bg-color {
     height: 176.59px;
   }
-  /* location responsive on large screens */
+  /* location headline responsive on large screens */
   .scale {
     width: 222px;
     height: 72px;
     transform: scale(1.5);
     margin: auto;
+  }
+  .desktop-blue {
+    width: 47%;
   }
 }
 
