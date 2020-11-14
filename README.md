@@ -24,7 +24,7 @@ This is the first project in Code Institute Full Stack Developer program based o
 
 ### Colours
 
-I have decided to have three gym locations with different colour themes. I have chosen a colour pallete which worked well and was used across most pages.
+> I have decided to have three gym locations with different colour themes. I have chosen a colour pallete which worked well and was used across most pages.
 
 <!-- ## Features -->
 
@@ -52,18 +52,25 @@ I have decided to have three gym locations with different colour themes. I have 
 
 ### Browser Compatibility
 
-Testing will be done on main desktop browsers: Chrome, Firefox , Edge and Opera.
-Testing will also be done on Chrome and Safari for mobile.
+> Testing will be done on main desktop browsers: Chrome, Firefox , Edge and Opera.
+> Testing will also be done on Chrome and Safari for mobile.
 
 ### Code validation
 
-All code will be tested using W3C validation service.
+> All code will be tested using W3C validation service.
 
 ### Accessibility
 
-Website will be tested using WAVE accessibility assesment tool.
+> Website will be tested using WAVE accessibility assesment tool.
 
-<!-- ### Bugs -->
+### Optimisation
+
+- Images were converted to JPG to make the load time quicker
+- Meta discription tag was added for better SEO
+
+### Bugs
+
+- Mobile toggler menu was glitching before loading due to the clash between bootstrap and element styles when activated. This was fixed by adding !important to the viewport height property.
 
 <!-- ## Deployment -->
 
@@ -71,7 +78,7 @@ Website will be tested using WAVE accessibility assesment tool.
 
 ### Content
 
-All textual content was made up and written by me
+> All textual content was made up and written by me
 
 ### Media
 

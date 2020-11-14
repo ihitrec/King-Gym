@@ -116,7 +116,7 @@ h1 span {
 .location-text-right {
   float: left;
   color: white;
-  width: 43%;
+  width: 42.7%;
   text-align: left;
   margin-top: 50px;
 }
@@ -151,7 +151,7 @@ h1 span {
 
 .desktop-location-right,
 .desktop-location-left {
-  width: 57%;
+  width: 57.3%;
   height: auto;
 }
 .mobile-location-img {
@@ -186,7 +186,6 @@ h1 span {
   }
   .navbar-collapse {
     background-color: #333;
-    /* important fixes load glitch */
     height: 100vh !important;
   }
   li a {
