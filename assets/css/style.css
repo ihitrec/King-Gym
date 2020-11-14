@@ -1,7 +1,8 @@
 /* START -------------------------------------------------------- Global style */
 
 @import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Satisfy&family=Yellowtail&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Goldman:wght@400;700&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Pacifico&family=Quicksand:wght@300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Audiowide&family=Goldman:wght@400;700&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Nixie+One&family=Pacifico&family=Quicksand:wght@300;400;500;600;700&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Supermercado+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400;500;600;700;800&family=Karla:ital,wght@0,400;0,700;1,400;1,700&family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
 body {
   height: 20000px;
@@ -70,6 +71,8 @@ ul {
 
 /* START -------------------------------------------------------- Locations style */
 
+/* location heading style */
+
 .locations {
   color: #5b5959;
 }
@@ -92,35 +95,67 @@ h1 span {
   bottom: 40px;
   display: block;
 }
-/* location 1 style */
+/* locations style */
 
 .location1 {
   background-color: #4b85a8;
   text-align: right;
 }
-.desktop-blue {
-  width: 57%;
-  height: auto;
+.location2 {
+  text-align: left;
+  background-color: #d98100;
 }
-.mobile-blue {
-  display: none;
+.location3 {
+  background-color: #e1b200;
+  text-align: right;
 }
-.location-text {
+
+/* location text style */
+
+.location-text-left,
+.location-text-right {
   float: left;
   color: white;
   width: 43%;
   text-align: left;
-  font-family: Arial, Helvetica, sans-serif;
   margin-top: 50px;
 }
-.location-text h1 {
-  padding-left: 50px;
-  font-family: "Pacifico";
+.location-text-right {
+  float: right;
+  text-align: right;
 }
-.location-text p {
+.location-text-left h1,
+.location-text-right h1 {
+  padding-left: 50px;
+  font-family: "Yellowtail";
+  font-size: 3vw;
+  letter-spacing: 3px;
+}
+
+.location-text-right h1 {
+  padding-right: 50px;
+  padding-left: 0px;
+}
+.location-text-left p,
+.location-text-right p {
   padding-left: 80px;
   line-height: 2.5;
-  font-family: "Quicksand";
+  font-family: "Nixie One";
+  font-size: 1.9vw;
+}
+.location-text-right p {
+  padding-right: 80px;
+  padding-left: 0;
+}
+/* location image style */
+
+.desktop-location-right,
+.desktop-location-left {
+  width: 57%;
+  height: auto;
+}
+.mobile-location-img {
+  display: none;
 }
 
 /* END ---------------------------------------------------------- Locations style */
@@ -169,13 +204,30 @@ h1 span {
 
   /* Location section */
 
-  .desktop-blue {
+  .desktop-location-right,
+  .desktop-location-left {
     display: none;
   }
 
-  .mobile-blue {
+  .mobile-location-img {
     display: initial;
     width: 100%;
+  }
+  .location-text-left,
+  .location-text-right {
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
+  }
+  .location-text-left h1,
+  .location-text-right h1 {
+    padding: 10px 0;
+    font-size: 30px;
+  }
+  .location-text-left p,
+  .location-text-right p {
+    padding: 5px 0 10px;
+    font-size: 15px;
   }
 }
 
@@ -193,7 +245,7 @@ h1 span {
   .nav-bg-color {
     height: 176.59px;
   }
-  /* location headline responsive on large screens */
+  /* location section responsive on large screens */
   .scale {
     width: 222px;
     height: 72px;
@@ -202,6 +254,9 @@ h1 span {
   }
   .desktop-blue {
     width: 47%;
+  }
+  .locations h1 {
+    margin-top: 40px;
   }
 }
 
