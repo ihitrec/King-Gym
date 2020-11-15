@@ -1,9 +1,9 @@
 /* START -------------------------------------------------------- Global style */
 
-@import url('https://fonts.googleapis.com/css2?family=Nixie+One&family=Yellowtail&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Nixie+One&family=Yellowtail&display=swap");
 
 body {
-  font-family: "Yellowtail",sans-serif;
+  font-family: "Yellowtail", sans-serif;
 }
 /* END ---------------------------------------------------------- Global style */
 
@@ -12,12 +12,10 @@ body {
 .navbar {
   background-color: transparent;
 }
-
 .logo img {
   height: 94.125px;
   width: 168.75px;
 }
-
 ul {
   margin: 20px 0 0 auto;
 }
@@ -66,32 +64,42 @@ ul {
   left: 18%;
   width: 64%;
   color: white;
-  background-color: rgba(51,51,51,.6);
+  background-color: rgba(51, 51, 51, 0.6);
   text-align: center;
-  
 }
 .video-overlay h1 {
   font-family: "Nixie One", sans-serif;
   font-size: 5vw;
   padding: 0 40px;
-  
 }
-.video-overlay p{
-    font-size: 2.5vw;
-    letter-spacing: 2px;
-    font-weight:100;
+.tagline {
+  font-size: 2.5vw;
+  letter-spacing: 2px;
+  font-weight: 100;
+  display: inline-block;
+  padding: 0 6px;
 }
-.training-button{
-    color: white;
-    font-family: "Nixie One",sans-serif;
-    text-transform: uppercase;
-    background-color: #d98100;
-    font-size: 1.3vw;
-    border: none;
-    border-radius: 20px;
-    margin-bottom: 20px;
-    text-align: center;
-    padding:2px 15px;
+.line1,
+.line2 {
+  margin-bottom: 4px;
+  width: 6%;
+  display: inline-block;
+  height: 1.5px;
+  background-color: white;
+  border-radius: 30px;
+}
+
+.training-button {
+  color: white;
+  font-family: "Nixie One", sans-serif;
+  text-transform: uppercase;
+  background-color: #d98100;
+  font-size: 1.3vw;
+  border: none;
+  border-radius: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+  padding: 2px 15px;
 }
 
 /* END ---------------------------------------------------------- Video style */
@@ -188,14 +196,10 @@ h1 span {
 
 /* START -------------------------------------------------------- Media query */
 
-
 /* Mobile responsiveness */
 
-
-
 @media only screen and (max-width: 767px) {
-
-/* navbar */
+  /* navbar */
 
   .toggler-bg-color {
     background-color: #d98100;
@@ -229,32 +233,30 @@ h1 span {
   }
 
   /* video */
-    
+
   .training-video {
     z-index: 0;
   }
   .training-video video {
     margin-top: 120.13px;
   }
-  .video-overlay{
-      width: 80%;
-      left:10%;
-      top:155px;
+  .video-overlay {
+    width: 80%;
+    left: 10%;
+    top: 155px;
   }
-  .video-overlay h1{
-      padding: 0 11px;
-      font-size: 9vw;
+  .video-overlay h1 {
+    padding: 0 11px;
+    font-size: 9vw;
   }
-  .video-overlay p{
-      margin: 0;
-      font-size: 4.5vw;
+  .tagline {
+    margin: 0;
+    font-size: 4.5vw;
   }
-  .training-button{
-      margin-bottom: 10px;
-      font-size: 2.1vw;
+  .training-button {
+    margin-bottom: 10px;
+    font-size: 2.1vw;
   }
-  
-
 
   /* location section */
 
@@ -282,17 +284,15 @@ h1 span {
     display: initial;
     width: 100%;
   }
-  
 }
-@media only screen and (max-width: 450px){
-    .video-overlay{
-        top:140px;
-    }
+@media only screen and (max-width: 450px) {
+  .video-overlay {
+    top: 140px;
+  }
 }
 
 /* large screen responsiveness */
 @media only screen and (min-width: 1440px) {
-
   /* navbar  */
   .logo img {
     height: 150.6px;
@@ -305,6 +305,15 @@ h1 span {
   }
   .nav-bg-color {
     height: 176.59px;
+  }
+
+  /* video overlay */
+
+  .line1,
+  .line2 {
+    margin-bottom: 10px;
+    height: 3px;
+    background-color: white;
   }
 
   /* location section */
