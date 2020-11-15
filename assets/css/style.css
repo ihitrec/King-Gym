@@ -1,18 +1,13 @@
 /* START -------------------------------------------------------- Global style */
 
-@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Satisfy&family=Yellowtail&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Audiowide&family=Goldman:wght@400;700&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Nixie+One&family=Pacifico&family=Quicksand:wght@300;400;500;600;700&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Supermercado+One&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400;500;600;700;800&family=Karla:ital,wght@0,400;0,700;1,400;1,700&family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Nixie+One&family=Yellowtail&display=swap');
 
 body {
-  height: 20000px;
-  background-color: #f4f4f4;
-  font-family: "Yellowtail";
-  font-weight: 700;
+  font-family: "Yellowtail",sans-serif;
 }
 /* END ---------------------------------------------------------- Global style */
 
-/* START -------------------------------------------------------- Header style */
+/* START -------------------------------------------------------- Navbar style */
 
 .navbar {
   background-color: transparent;
@@ -28,13 +23,12 @@ ul {
 }
 .nav-link {
   color: white !important;
-  font-family: "Yellowtail", sans-serif;
   font-weight: 700;
   font-size: 25px;
   letter-spacing: 3px;
 }
 .orange-navlink-divide {
-  border-right: 2px solid orange;
+  border-right: 2px solid #d98100;
 }
 .nav-bg-color {
   background-color: #333;
@@ -43,17 +37,14 @@ ul {
   width: 100%;
   z-index: 1;
 }
-.toggler-bg-color {
-  background-color: #f4f4f4;
-  opacity: 0.7;
-}
 .navbar-collapse {
   text-align: center;
 }
 
-/* END ---------------------------------------------------------- Header style */
+/* END ---------------------------------------------------------- Navbar style */
 
 /* START -------------------------------------------------------- Video style */
+
 .training-video {
   height: auto;
   width: 100%;
@@ -67,11 +58,47 @@ ul {
   object-fit: cover;
 }
 
+/* video overlay */
+
+.video-overlay {
+  position: absolute;
+  top: 33%;
+  left: 18%;
+  width: 64%;
+  color: white;
+  background-color: rgba(51,51,51,.6);
+  text-align: center;
+  
+}
+.video-overlay h1 {
+  font-family: "Nixie One", sans-serif;
+  font-size: 5vw;
+  padding: 0 40px;
+  
+}
+.video-overlay p{
+    font-size: 2.5vw;
+    letter-spacing: 2px;
+    font-weight:100;
+}
+.training-button{
+    color: white;
+    font-family: "Nixie One",sans-serif;
+    text-transform: uppercase;
+    background-color: #d98100;
+    font-size: 1.3vw;
+    border: none;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+    padding:2px 15px;
+}
+
 /* END ---------------------------------------------------------- Video style */
 
 /* START -------------------------------------------------------- Locations style */
 
-/* location heading style */
+/* location heading */
 
 .locations {
   color: #5b5959;
@@ -95,7 +122,7 @@ h1 span {
   bottom: 40px;
   display: block;
 }
-/* locations style */
+/* location backgrounds */
 
 .location1 {
   background-color: #4b85a8;
@@ -110,13 +137,13 @@ h1 span {
   text-align: right;
 }
 
-/* location text style */
+/* location text */
 
 .location-text-left,
 .location-text-right {
   float: left;
   color: white;
-  width: 42.7%;
+  width: 42.6%;
   text-align: left;
   margin-top: 50px;
 }
@@ -127,7 +154,6 @@ h1 span {
 .location-text-left h1,
 .location-text-right h1 {
   padding-left: 50px;
-  font-family: "Yellowtail";
   font-size: 3vw;
   letter-spacing: 3px;
 }
@@ -140,18 +166,18 @@ h1 span {
 .location-text-right p {
   padding-left: 80px;
   line-height: 2.5;
-  font-family: "Nixie One";
+  font-family: "Nixie One", sans-serif;
   font-size: 1.9vw;
 }
 .location-text-right p {
   padding-right: 80px;
   padding-left: 0;
 }
-/* location image style */
+/* location images */
 
 .desktop-location-right,
 .desktop-location-left {
-  width: 57.3%;
+  width: 57.4%;
   height: auto;
 }
 .mobile-location-img {
@@ -162,18 +188,19 @@ h1 span {
 
 /* START -------------------------------------------------------- Media query */
 
-/* navbar and toggler responsive on mobile  */
+
+/* Mobile responsiveness */
+
+
+
 @media only screen and (max-width: 767px) {
-  .training-video {
-    z-index: 0;
-  }
-  .training-video video {
-    margin-top: 120.13px;
-  }
+
+/* navbar */
+
   .toggler-bg-color {
     background-color: #d98100;
+    opacity: 0.7;
   }
-
   .navbar {
     padding: 0;
   }
@@ -190,7 +217,7 @@ h1 span {
   }
   li a {
     border-right: none;
-    border: 2px solid orange;
+    border: 2px solid #d98100;
     border-radius: 20px;
   }
   li {
@@ -201,16 +228,33 @@ h1 span {
     background-color: #d98100;
   }
 
-  /* Location section */
+  /* video */
+    
+  .training-video {
+    z-index: 0;
+  }
+  .training-video video {
+    margin-top: 120.13px;
+  }
+  .video-overlay{
+      width: 40%;
+      left:30%;
+      top:180px;
+  }
+  .video-overlay h1{
+      padding: 0;
+  }
+  .video-overlay p{
+      margin: 0;
+  }
+  
+
+
+  /* location section */
 
   .desktop-location-right,
   .desktop-location-left {
     display: none;
-  }
-
-  .mobile-location-img {
-    display: initial;
-    width: 100%;
   }
   .location-text-left,
   .location-text-right {
@@ -228,10 +272,22 @@ h1 span {
     padding: 5px 0 10px;
     font-size: 15px;
   }
+  .mobile-location-img {
+    display: initial;
+    width: 100%;
+  }
+  
+}
+@media only screen and (max-width: 450px){
+    .video-overlay{
+        top:150px;
+    }
 }
 
+/* large screen responsiveness */
 @media only screen and (min-width: 1440px) {
-  /* navbar responsive on large screens */
+
+  /* navbar  */
   .logo img {
     height: 150.6px;
     width: 270px;
@@ -244,15 +300,14 @@ h1 span {
   .nav-bg-color {
     height: 176.59px;
   }
-  /* location section responsive on large screens */
+
+  /* location section */
+
   .scale {
     width: 222px;
     height: 72px;
     transform: scale(1.5);
     margin: auto;
-  }
-  .desktop-blue {
-    width: 47%;
   }
   .locations h1 {
     margin-top: 40px;
