@@ -2,7 +2,7 @@
 
 # King Gym
 
-King Gym website is designed for current members and people looking to join a gym and wish to know more about the schedule, training available and all other information.
+King Gym website is designed for current gym members and people looking to join a gym and wish to know more about the schedule, training available and all other information.
 
 This is the first project in Code Institute Full Stack Developer program based on HTML, CSS and optional frameworks like Bootstrap.
 

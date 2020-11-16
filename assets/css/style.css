@@ -330,3 +330,18 @@ h1 span {
 }
 
 /* END ------------------------------------------------------------ Media query */
+
+/* START ---------------------------------------------------------- Hover */
+.training-button {
+  transition: all 0.3s ease-in-out;
+}
+.training-button:hover {
+  transform: scale(1.1);
+  background-color: transparent;
+  border: 1.5px solid #d98100;
+}
+.training-button:focus {
+  outline: none;
+}
+
+/* END ------------------------------------------------------------ Hover */
