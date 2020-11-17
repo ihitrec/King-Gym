@@ -11,6 +11,24 @@
   </head>
 
   <body>
+    <!-- modal  -->
+    <div class="modal fade" id="trainingModal" tabindex="-1" role="dialog" aria-labelledby="trainingModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="trainingModalLabel">Book a free training session</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">Try out our gym equipment for a day, no comitments. Just fill the form below and you're all set.</div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Save changes</button>
+          </div>
+        </div>
+      </div>
+    </div>
     <header>
       <!-- navbar -->
       <div class="nav-bg-color"></div>
@@ -50,7 +68,13 @@
             <p class="tagline">Train like a king!</p>
             <div class="line2"></div>
           </div>
-          <button class="training-button grow">book a free training</button>
+          <button class="training-button" data-toggle="modal" data-target="#trainingModal">book a free training</button>
+        </div>
+      </section>
+      <section class="about">
+        <div class="scale">
+          <h1 class="about-headline"><span>A</span>bout us</h1>
+          <img class="tricolor about-tricolor" src="assets/images/tricolor_underline.jpg" alt="" />
         </div>
       </section>
       <!-- location section -->

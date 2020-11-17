@@ -100,20 +100,48 @@ ul {
   margin-bottom: 20px;
   text-align: center;
   padding: 2px 15px;
+  transition: all 0.3s ease-in-out;
+}
+.training-button:hover {
+  transform: scale(1.1);
+  background-color: transparent;
+  border: 1.5px solid #d98100;
+}
+.training-button:focus {
+  outline: none;
+}
+
+/* training modal */
+
+.modal-title {
+  letter-spacing: 2px;
+}
+.modal-body {
+  font-family: "Nixie One", sans-serif;
 }
 
 /* END ---------------------------------------------------------- Video style */
+
+/* START -------------------------------------------------------- About style */
+
+.about-headline {
+  width: 127px !important;
+}
+.about-tricolor {
+  left: 12px !important;
+  width: 90px !important;
+}
+
+/* END ---------------------------------------------------------- About style */
 
 /* START -------------------------------------------------------- Locations style */
 
 /* location heading */
 
-.locations {
-  color: #5b5959;
-}
 .scale h1 {
   margin: 35px auto;
   width: 148px;
+  color: #5b5959;
 }
 h1 span {
   font-size: 50px;
@@ -124,7 +152,7 @@ h1 span {
   width: 100px;
   height: 3.5px;
   left: 17px;
-  right: 10px;
+
   position: relative;
   margin: 0 auto;
   bottom: 40px;
@@ -197,6 +225,12 @@ h1 span {
 /* START -------------------------------------------------------- Media query */
 
 /* Mobile responsiveness */
+
+@media only screen and (max-width: 450px) {
+  .video-overlay {
+    top: 140px;
+  }
+}
 
 @media only screen and (max-width: 767px) {
   /* navbar */
@@ -285,15 +319,20 @@ h1 span {
     width: 100%;
   }
 }
-@media only screen and (max-width: 450px) {
-  .video-overlay {
-    top: 140px;
+
+/* tablet responsiveness */
+
+@media only screen and (min-width: 900px) {
+  .modal {
+    transform: scale(1.5);
   }
 }
 
 /* large screen responsiveness */
+
 @media only screen and (min-width: 1440px) {
   /* navbar  */
+
   .logo img {
     height: 150.6px;
     width: 270px;
@@ -325,12 +364,19 @@ h1 span {
     margin: auto;
     margin-bottom: 30px;
   }
-  .locations h1 {
+  .scale h1 {
     margin-top: 40px;
+  }
+
+  /* modal */
+
+  .modal {
+    transform: scale(2);
   }
 }
 
 @media only screen and (min-width: 1900px) {
+  /* navbar */
   .nav-bg-color {
     transform: scale(1.5);
     margin-top: 45px;
@@ -345,24 +391,18 @@ h1 span {
     margin-right: 200px;
     margin-top: 50px;
   }
+
+  /* location heading */
+
   .scale {
     transform: scale(2);
+  }
+
+  /* modal */
+
+  .modal {
+    transform: scale(2.5);
   }
 }
 
 /* END ------------------------------------------------------------ Media query */
-
-/* START ---------------------------------------------------------- Hover */
-.training-button {
-  transition: all 0.3s ease-in-out;
-}
-.training-button:hover {
-  transform: scale(1.1);
-  background-color: transparent;
-  border: 1.5px solid #d98100;
-}
-.training-button:focus {
-  outline: none;
-}
-
-/* END ------------------------------------------------------------ Hover */
