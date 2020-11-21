@@ -71,6 +71,7 @@ This is the first project in Code Institute Full Stack Developer program based o
 ### Bugs
 
 - Mobile toggler menu was glitching before loading due to the clash between bootstrap and element styles when activated. This was fixed by adding !important to the viewport height property.
+- Main headlines were not responsive when font size was changed in the browser settings. Fixed sizes were changed to ems which made everything scale proportionately. Putting the tricolor image inside the p tag allowed it to scale with the font size.
 
 <!-- ## Deployment -->
 
