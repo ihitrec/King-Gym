@@ -214,7 +214,7 @@ ul {
 .locations-headline {
   width: 3.6em;
 }
-.scale h1 {
+.headline-scale h1 {
   margin: 35px auto;
   color: #5b5959;
 }
@@ -309,21 +309,29 @@ h1 span {
   bottom: 6px;
 }
 
-.testimonials-container {
-  margin-bottom: 100px;
-}
 .circle {
   position: relative;
-  top: 30px;
+  top: 59px;
   margin: 0 auto;
-  width: 200px;
-  height: 200px;
+  width: 300px;
+  /* height: 200px; */
+  text-align: center;
 }
 .circle img {
-  width: 200px;
-  height: 200px;
+  width: 140px;
+  height: 140px;
   border-radius: 50%;
 }
+.double-border1 {
+  border: 7px double #4b85a8;
+}
+.double-border2 {
+  border: 7px double #d98100;
+}
+.double-border3 {
+  border: 7px double #e1b200;
+}
+
 .customer1 {
   border: 4px solid #4b85a8;
 }
@@ -334,20 +342,23 @@ h1 span {
   border: 4px solid #e1b200;
 }
 .text {
-  border: 1px solid #333;
   border-radius: 20px;
   width: 300px;
   margin: 0 auto;
   background-color: white;
+  box-shadow: 15px 15px 14px lightgrey;
 }
 .text h1 {
-  margin-top: 45px;
+  margin-top: 43px;
   margin-bottom: 10px;
   text-align: center;
   color: #5b5959;
+  padding-top: 16px;
 }
 .text p {
   font-family: "Nixie One", sans-serif;
+  font-size: 0.9em;
+  padding: 15px;
 }
 
 /* END ---------------------------------------------------------- Testimonials style */
@@ -361,6 +372,7 @@ h1 span {
   background-color: #333;
   height: auto;
   color: white;
+  margin-top: 100px;
 }
 .social-media h1 {
   font-size: 1.6vw;
@@ -501,8 +513,12 @@ h1 span {
 /* large screen responsiveness */
 
 @media only screen and (min-width: 1440px) {
-  /* navbar  */
+  /* modal */
+  .modal {
+    transform: scale(1.5);
+  }
 
+  /* navbar  */
   .logo img {
     height: 150.6px;
     width: 270px;
@@ -517,31 +533,11 @@ h1 span {
   }
 
   /* video overlay */
-
   .line1,
   .line2 {
     margin-bottom: 10px;
     height: 3px;
     background-color: white;
-  }
-
-  /* location section */
-
-  .scale {
-    width: 222px;
-    height: 72px;
-    transform: scale(1.5);
-    margin: auto;
-    margin-bottom: 65px;
-  }
-  .scale h1 {
-    margin-top: 40px;
-  }
-
-  /* modal */
-
-  .modal {
-    transform: scale(1.5);
   }
 
   /* about */
@@ -554,33 +550,21 @@ h1 span {
   .about-container figcaption {
     font-size: 1.1vw;
   }
+
+  /* location section */
+  .headline-scale {
+    width: 222px;
+    height: 72px;
+    transform: scale(1.5);
+    margin: auto;
+  }
+  .headline-scale h1 {
+    margin-top: 40px;
+  }
 }
 
 @media only screen and (min-width: 1900px) {
-  /* navbar */
-  .nav-bg-color {
-    transform: scale(1.5);
-    margin-top: 45px;
-  }
-  .logo {
-    transform: scale(1.5);
-    margin-top: 50px;
-    margin-left: 90px;
-  }
-  ul {
-    transform: scale(1.5);
-    margin-right: 200px;
-    margin-top: 50px;
-  }
-
-  /* location headline */
-
-  .scale {
-    transform: scale(2);
-  }
-
   /* modal */
-
   .modal {
     transform: scale(2.5);
   }
@@ -588,6 +572,23 @@ h1 span {
   /* about */
   .about-container img {
     width: 150px;
+  }
+
+  /* location headline */
+  .headline-scale {
+    transform: scale(2);
+  }
+
+  /* testimonials */
+  .testimonials-container {
+    transform: scale(1.5);
+  }
+  .scale-row {
+    width: 80%;
+    margin: 100px auto;
+  }
+  .testimonials-container {
+    margin-bottom: 100px;
   }
 }
 
