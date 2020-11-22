@@ -553,10 +553,11 @@ h1 span {
 
   /* location section */
   .headline-scale {
-    width: 222px;
+    width: 11em;
     height: 72px;
     transform: scale(1.5);
     margin: auto;
+    margin-bottom: 65px;
   }
   .headline-scale h1 {
     margin-top: 40px;
@@ -585,7 +586,7 @@ h1 span {
   }
   .scale-row {
     width: 80%;
-    margin: 100px auto;
+    margin: 7em auto;
   }
   .testimonials-container {
     margin-bottom: 100px;
