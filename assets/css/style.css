@@ -193,6 +193,9 @@ ul {
   margin-bottom: 40px;
   letter-spacing: 1px;
   font-style: italic;
+  text-align: justify;
+  font-family: "Montserrat";
+  font-weight: 300;
 }
 .icon-column {
   text-align: center;
@@ -313,8 +316,7 @@ h1 span {
   position: relative;
   top: 59px;
   margin: 0 auto;
-  width: 300px;
-  /* height: 200px; */
+  max-width: 300px;
   text-align: center;
 }
 .circle img {
@@ -343,7 +345,7 @@ h1 span {
 }
 .text {
   border-radius: 20px;
-  width: 300px;
+  max-width: 300px;
   margin: 0 auto;
   background-color: white;
   box-shadow: 15px 15px 14px lightgrey;
@@ -356,7 +358,8 @@ h1 span {
   padding-top: 16px;
 }
 .text p {
-  font-family: "Nixie One", sans-serif;
+  font-family: "Montserrat";
+  font-weight: 300;
   font-size: 0.9em;
   padding: 15px;
 }
@@ -495,6 +498,8 @@ h1 span {
   .location-text-right p {
     padding: 5px 0 10px;
     font-size: 15px;
+    font-family: "Montserrat";
+    font-weight: 300;
   }
   .mobile-location-img {
     display: initial;
@@ -507,6 +512,11 @@ h1 span {
 @media only screen and (min-width: 1100px) {
   .modal {
     transform: scale(1.2);
+  }
+
+  /* about section */
+  .about-container p {
+    margin-right: 3em;
   }
 }
 
@@ -567,7 +577,7 @@ h1 span {
 @media only screen and (min-width: 1900px) {
   /* modal */
   .modal {
-    transform: scale(2.5);
+    transform: scale(2);
   }
 
   /* about */
