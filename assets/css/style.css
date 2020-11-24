@@ -349,6 +349,7 @@ h1 span {
   margin: 0 auto;
   background-color: white;
   box-shadow: 15px 15px 14px lightgrey;
+  min-height: 324px;
 }
 .text h1 {
   margin-top: 43px;
@@ -366,6 +367,21 @@ h1 span {
 
 /* END ---------------------------------------------------------- Testimonials style */
 
+/* START -------------------------------------------------------- Gallery style */
+.gallery-headline{
+    width: 2.9em;
+    margin-left:30px !important;
+}
+.gallery-tricolor{
+    right: 0.36em;
+    width: 1.5em;
+    bottom: 6px;
+}
+
+
+
+/* END ---------------------------------------------------------- Gallery style */
+
 /* START -------------------------------------------------------- Footer style */
 
 .group {
@@ -378,7 +394,7 @@ h1 span {
   margin-top: 100px;
 }
 .social-media h1 {
-  font-size: 1.6vw;
+  font-size: 2vw;
   display: inline-block;
 }
 .social-media i {
@@ -405,6 +421,10 @@ h1 span {
 @media only screen and (max-width: 450px) {
   .video-overlay {
     top: 140px;
+  }
+   /* footer */
+  .copyright p{
+      font-size: .7em;
   }
 }
 
@@ -505,6 +525,13 @@ h1 span {
     display: initial;
     width: 100%;
   }
+  /* footer */
+  .social-media h1{
+      font-size: 1.5em;
+  }
+  .social-media i{
+      font-size: 2em;
+  }
 }
 
 /* tablet responsiveness */
@@ -572,7 +599,20 @@ h1 span {
   .headline-scale h1 {
     margin-top: 40px;
   }
-}
+
+  /* gallery */
+  
+ #gallery-scale {
+    margin-left:30px;
+   }
+
+  /* footer */
+  .copyright p{
+   font-size: 1.5vw;
+  }
+
+
+
 
 @media only screen and (min-width: 1900px) {
   /* modal */
@@ -601,6 +641,13 @@ h1 span {
   .testimonials-container {
     margin-bottom: 100px;
   }
+
+  /* gallery */
+  #gallery-scale {
+    margin-left:70px;
+  }
+   
+  
 }
 
-/* END ------------------------------------------------------------ Media query */
+/* END ------------------------------------------------------------ Media query */ 
