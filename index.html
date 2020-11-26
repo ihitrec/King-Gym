@@ -1,70 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="description"
+      content="Gyms in Dublin with high quality equipment and a friendly atmosphere. All skill and fitness levels welcome! Book a free training."
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+      integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2"
+      crossorigin="anonymous"
+    />
+    <script src="https://kit.fontawesome.com/69b2179d00.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <title>King Gym</title>
+  </head>
 
-<head>
-	<meta charset="UTF-8" />
-	<meta name="description"
-		content="Gyms in Dublin with high quality equipment and a friendly atmosphere. All skill and fitness levels welcome! Book a free training." />
-	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
-		integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous" />
-	<script src="https://kit.fontawesome.com/69b2179d00.js" crossorigin="anonymous"></script>
-	<link rel="stylesheet" href="assets/css/style.css" />
-	<title>King Gym</title>
-</head>
-
-<body>
-	<!-- modal  -->
-	<div class="modal fade" id="trainingModal" tabindex="-1" role="dialog" aria-labelledby="trainingModalLabel"
-		aria-hidden="true">
-		<div class="modal-dialog modal-dialog-centered" role="document">
-			<div class="modal-content">
-				<div class="modal-header">
-					<h5 class="modal-title" id="trainingModalLabel">Book a free training session</h5>
-					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+  <body>
+    <!-- modal  -->
+    <div class="modal fade" id="trainingModal" tabindex="-1" role="dialog" aria-labelledby="trainingModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="trainingModalLabel">Book a free training session</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
               <span class="close-modal" aria-hidden="true">&times;</span>
             </button>
-				</div>
-				<div class="modal-body">
-					<p>Try out our gym equipment for a day, no comitments. Just fill out the form below and you're all
-						set.</p>
-					<hr class="modal-hr" />
-				</div>
+          </div>
+          <div class="modal-body">
+            <p>Try out our gym equipment for a day, no comitments. Just fill out the form below and you're all set.</p>
+            <hr class="modal-hr" />
+          </div>
 
-				<div class="modal-footer">
-					<!-- modal form -->
-					<form class="container">
-						<div class="row">
-							<div class="col-sm-6">
-								<label for="fname">First name:</label> <br />
-								<input type="text" name="fname" id="fname" required />
+          <div class="modal-footer">
+            <!-- modal form -->
+            <form class="container">
+              <div class="row">
+                <div class="col-sm-6">
+                  <label for="fname">First name:</label> <br />
+                  <input type="text" name="fname" id="fname" required />
                 </div>
-								<div class="col-sm-6">
-									<label for="lname">Last name:</label> <br />
-									<input type="text" name="lname" id="lname" required />
+                <div class="col-sm-6">
+                  <label for="lname">Last name:</label> <br />
+                  <input type="text" name="lname" id="lname" required />
                 </div>
-								</div>
-								<div class="row">
-									<div class="col-12">
-										<label for="email">Email address:</label> <br />
-										<input type="email" name="email" id="email" required />
+              </div>
+              <div class="row">
+                <div class="col-12">
+                  <label for="email">Email address:</label> <br />
+                  <input type="email" name="email" id="email" required />
                 </div>
-									</div>
-									<br />
-									<button type="submit" class="btn">Send</button>
-					</form>
-				</div>
-			</div>
-		</div>
-	</div>
-	<header>
-		<!-- navbar -->
-		<div class="nav-bg-color"></div>
-		<nav class="navbar fixed-top navbar-expand-md navbar-light">
-			<a class="navbar-brand logo" href="#">
-				<img src="assets/images/logo.png" alt="Gym logo" />
+              </div>
+              <br />
+              <button type="submit" class="btn">Send</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <header>
+      <!-- navbar -->
+      <div class="nav-bg-color"></div>
+      <nav class="navbar fixed-top navbar-expand-md navbar-light">
+        <a class="navbar-brand logo" href="#">
+          <img src="assets/images/logo.png" alt="Gym logo" />
         </a>
-				<button
+        <button
           class="navbar-toggler toggler-bg-color"
           type="button"
           data-toggle="collapse"
@@ -75,231 +78,226 @@
         >
           <span class="navbar-toggler-icon"></span>
         </button>
-				<div class="collapse load-fix navbar-collapse" id="navbarSupportedContent">
-					<ul class="navbar-nav">
-						<!-- add active classes when visiting different pages -->
-						<li class="nav-item">
-							<a class="nav-link orange-navlink-divide" href="#">Join us</a>
-						</li>
+        <div class="collapse load-fix navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav">
+            <!-- add active classes when visiting different pages -->
+            <li class="nav-item">
+              <a class="nav-link orange-navlink-divide" href="#">Join us</a>
+            </li>
 
-						<li class="nav-item">
-							<a class="nav-link orange-navlink-divide" href="#">Memberships</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="#">Contact</a>
-						</li>
-					</ul>
-				</div>
-		</nav>
-	</header>
-	<main>
-		<!-- video section -->
-		<section class="training-video">
-			<video src="assets/images/training-video.mp4" alt="Training video" muted autoplay loop></video>
-			<!-- video overlay -->
-			<div class="video-overlay">
-				<h1>Welcome to King Gym</h1>
-				<div>
-					<div class="line1"></div>
-					<p class="tagline">Train like a king!</p>
-					<div class="line2"></div>
-				</div>
-				<button class="training-button" data-toggle="modal" data-target="#trainingModal">book a free training</button>
-			</div>
-		</section>
-		<!-- about section -->
-		<section class="about">
-			<div class="headline-scale">
-				<h1 class="about-headline">
-					<span>A</span>bout us
-					<img class="tricolor about-tricolor" src="assets/images/tricolor_underline.jpg" alt="Headline underline" />
+            <li class="nav-item">
+              <a class="nav-link orange-navlink-divide" href="#">Memberships</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <!-- video section -->
+      <section class="training-video">
+        <video src="assets/images/training-video.mp4" alt="Training video" muted autoplay loop></video>
+        <!-- video overlay -->
+        <div class="video-overlay">
+          <h1>Welcome to King Gym</h1>
+          <div>
+            <div class="line1"></div>
+            <p class="tagline">Train like a king!</p>
+            <div class="line2"></div>
+          </div>
+          <button class="training-button" data-toggle="modal" data-target="#trainingModal">book a free training</button>
+        </div>
+      </section>
+      <!-- about section -->
+      <section class="about">
+        <div class="headline-scale">
+          <h1 class="about-headline">
+            <span>A</span>bout us
+            <img class="tricolor about-tricolor" src="assets/images/tricolor_underline.jpg" alt="Headline underline" />
           </h1>
-			</div>
-			<div class="container-fluid about-container">
-				<div class="row align-items-center">
-					<div class="col-lg-6">
-						<p>
-							We are a newly opened gym with high quality equipment in three Dublin locations. You are
-							welcome regardless of skill level.
-							Our dedicated team will be there to help you with anything you need. There also is an option
-							to receive a more personalised
-							nutritional and workout plan from our expert personal trainers. Your membership includes
-							access to any of our gyms. Come
-							visit _location_ which is our biggest location with a swimming pool. It's a great way to
-							relax after a workout. If you are
-							unsure, just book a free training and see how you like our gym experience.
-						</p>
-					</div>
-					<div class="col-lg-6 icon-column">
-						<div class="row">
-							<figure class="col-sm-6 col-md-3 col-lg-6">
-								<img class="icon" src="assets/images/personal-trainer.png" alt="Personal trainer icon" />
-								<figcaption>Personal trainers available</figcaption>
-							</figure>
-							<figure class="col-sm-6 col-md-3 col-lg-6">
-								<img class="icon" src="assets/images/gym-equipment.png" alt="Gym equipment icon" />
-								<figcaption>High quality equipment, maintained daily</figcaption>
-							</figure>
-							<figure class="col-sm-6 col-md-3 col-lg-6">
-								<img class="icon" src="assets/images/check-list.png" alt="Checklist icon" />
-								<figcaption>Free personalised training checklist</figcaption>
-							</figure>
-							<figure class="col-sm-6 col-md-3 col-lg-6">
-								<img class="icon" src="assets/images/lockers.png" alt="Gym lockers icon" />
-								<figcaption>Secure gym lockers</figcaption>
-							</figure>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-		<!-- location section -->
-		<section class="locations">
-			<div class="headline-scale">
-				<h1 class="locations-headline">
-					<span>L</span>ocations
-					<img class="locations-tricolor tricolor" src="assets/images/tricolor_underline.jpg" alt="Headline underline" />
+        </div>
+        <div class="container-fluid about-container">
+          <div class="row align-items-center">
+            <div class="col-lg-6">
+              <p>
+                We are a newly opened gym with high quality equipment in three Dublin locations. You are welcome regardless of skill level.
+                Our dedicated team will be there to help you with anything you need. There also is an option to receive a more personalised
+                nutritional and workout plan from our expert personal trainers. Your membership includes access to any of our gyms. Come
+                visit _location_ which is our biggest location with a swimming pool. It's a great way to relax after a workout. If you are
+                unsure, just book a free training and see how you like our gym experience.
+              </p>
+            </div>
+            <div class="col-lg-6 icon-column">
+              <div class="row">
+                <figure class="col-sm-6 col-md-3 col-lg-6">
+                  <img class="icon" src="assets/images/personal-trainer.png" alt="Personal trainer icon" />
+                  <figcaption>Personal trainers available</figcaption>
+                </figure>
+                <figure class="col-sm-6 col-md-3 col-lg-6">
+                  <img class="icon" src="assets/images/gym-equipment.png" alt="Gym equipment icon" />
+                  <figcaption>High quality equipment, maintained daily</figcaption>
+                </figure>
+                <figure class="col-sm-6 col-md-3 col-lg-6">
+                  <img class="icon" src="assets/images/check-list.png" alt="Checklist icon" />
+                  <figcaption>Free personalised training checklist</figcaption>
+                </figure>
+                <figure class="col-sm-6 col-md-3 col-lg-6">
+                  <img class="icon" src="assets/images/lockers.png" alt="Gym lockers icon" />
+                  <figcaption>Secure gym lockers</figcaption>
+                </figure>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- location section -->
+      <section class="locations">
+        <div class="headline-scale">
+          <h1 class="locations-headline">
+            <span>L</span>ocations
+            <img class="locations-tricolor tricolor" src="assets/images/tricolor_underline.jpg" alt="Headline underline" />
           </h1>
-			</div>
-			<div class="location1">
-				<div class="location-text-left">
-					<h1>Dublin City Center</h1>
-					<p>
-						Size: small <br />
+        </div>
+        <div class="location1">
+          <div class="location-text-left">
+            <h1>Dublin City Center</h1>
+            <p>
+              Size: small <br />
               Address: 15 Westmoreland Street <br />
               Working hours: 8:00 - 20:00 <br />
               Contact number: (01) 544 6721
             </p>
-				</div>
-				<img class="desktop-location-right" src="assets/images/blue-location.jpg" alt="" />
-				<img class="mobile-location-img" src="assets/images/blue-location-mobile.jpg" alt="" />
+          </div>
+          <img class="desktop-location-right" src="assets/images/blue-location.jpg" alt="" />
+          <img class="mobile-location-img" src="assets/images/blue-location-mobile.jpg" alt="" />
         </div>
-				<div class="location2">
-					<div class="location-text-right">
-						<h1>Dublin City Center</h1>
-						<p>
-							Size: medium <br />
+        <div class="location2">
+          <div class="location-text-right">
+            <h1>Dublin City Center</h1>
+            <p>
+              Size: medium <br />
               Address: 15 Westmoreland Street <br />
               Working hours: 8:00 - 20:00 <br />
               Contact number: (01) 544 6721
             </p>
-					</div>
-					<img class="desktop-location-left" src="assets/images/orange-location.jpg" alt="" />
-					<img class="mobile-location-img" src="assets/images/orange-location-mobile.jpg" alt="" />
+          </div>
+          <img class="desktop-location-left" src="assets/images/orange-location.jpg" alt="" />
+          <img class="mobile-location-img" src="assets/images/orange-location-mobile.jpg" alt="" />
         </div>
-					<div class="location3">
-						<div class="location-text-left">
-							<h1>Dublin City Center</h1>
-							<p>
-								Size: large <br />
+        <div class="location3">
+          <div class="location-text-left">
+            <h1>Dublin City Center</h1>
+            <p>
+              Size: large <br />
               Address: 15 Westmoreland Street <br />
               Working hours: 8:00 - 20:00 <br />
               Contact number: (01) 544 6721
             </p>
-						</div>
-						<img class="desktop-location-right" src="assets/images/yellow-location.jpg" alt="" />
-						<img class="mobile-location-img" src="assets/images/yellow-location-mobile.jpg" alt="" />
+          </div>
+          <img class="desktop-location-right" src="assets/images/yellow-location.jpg" alt="" />
+          <img class="mobile-location-img" src="assets/images/yellow-location-mobile.jpg" alt="" />
         </div>
-		</section>
-		<!-- testimonials -->
-		<section class="testimonials">
-			<div class="headline-scale">
-				<h1 class="testimonials-headline">
-					<span>T</span>estimonials
-					<img class="tricolor testimonials-tricolor" src="assets/images/tricolor_underline.jpg" alt="Headline underline" />
+      </section>
+      <!-- testimonials -->
+      <section class="testimonials">
+        <div class="headline-scale">
+          <h1 class="testimonials-headline">
+            <span>T</span>estimonials
+            <img class="tricolor testimonials-tricolor" src="assets/images/tricolor_underline.jpg" alt="Headline underline" />
           </h1>
-			</div>
-			<div class="container-fluid">
-				<div class="row scale-row">
-					<div class="col-md-12 col-lg-4 testimonials-container">
-						<div class="circle">
-							<img class="customer1" src="assets/images/customer1.jpg" alt="" />
+        </div>
+        <div class="container-fluid">
+          <div class="row scale-row">
+            <div class="col-md-12 col-lg-4 testimonials-container">
+              <div class="circle">
+                <img class="customer1" src="assets/images/customer1.jpg" alt="" />
               </div>
-							<div class="text double-border1">
-								<h1>Anna</h1>
-								<p>
-									The personnel in King Gym is friendly and helpful. I have been given a personalised
-									training scedule. As a beginner, that
-									helped getting past the initial confusion of where to start.
-								</p>
-							</div>
-						</div>
-						<div class="col-md-6 col-lg-4 testimonials-container">
-							<div class="circle">
-								<img class="customer2" src="assets/images/customer2.jpg" alt="" />
+              <div class="text double-border1">
+                <h1>Anna</h1>
+                <p>
+                  The personnel in King Gym is friendly and helpful. I have been given a personalised training scedule. As a beginner, that
+                  helped getting past the initial confusion of where to start.
+                </p>
               </div>
-								<div class="text double-border2">
-									<h1>Jim</h1>
-									<p>
-										King Gym is the best gym I have ever visited. It has all the equipment that you
-										could ever need. Forget waiting for
-										someone to finnish their set. The _location_ even has a pool which is a great
-										way to relax after a workout.
-									</p>
-								</div>
-							</div>
-							<div class="col-md-6 col-lg-4 testimonials-container">
-								<div class="circle">
-									<img class="customer3" src="assets/images/customer3.jpg" alt="" />
+            </div>
+            <div class="col-md-6 col-lg-4 testimonials-container">
+              <div class="circle">
+                <img class="customer2" src="assets/images/customer2.jpg" alt="" />
               </div>
-									<div class="text double-border3">
-										<h1>Emma</h1>
-										<p>
-											King Gym makes me feel like home. There is a wonderful atmosphere and people
-											who you can ask for help. I even made some
-											new friends.
-										</p>
-									</div>
-								</div>
-							</div>
-						</div>
-		</section>
-		<!-- gallery -->
-		<section class="gallery">
-			<div class="headline-scale" id="gallery-scale">
-				<h1 class="gallery-headline">
-					<span>G</span>allery
-					<img class="tricolor gallery-tricolor" src="assets/images/tricolor_underline.jpg" alt="Headline underline" />
+              <div class="text double-border2">
+                <h1>Jim</h1>
+                <p>
+                  King Gym is the best gym I have ever visited. It has all the equipment that you could ever need. Forget waiting for
+                  someone to finnish their set. The _location_ even has a pool which is a great way to relax after a workout.
+                </p>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4 testimonials-container">
+              <div class="circle">
+                <img class="customer3" src="assets/images/customer3.jpg" alt="" />
+              </div>
+              <div class="text double-border3">
+                <h1>Emma</h1>
+                <p>
+                  King Gym makes me feel like home. There is a wonderful atmosphere and people who you can ask for help. I even made some
+                  new friends.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- gallery -->
+      <section class="gallery">
+        <div class="headline-scale" id="gallery-scale">
+          <h1 class="gallery-headline">
+            <span>G</span>allery
+            <img class="tricolor gallery-tricolor" src="assets/images/tricolor_underline.jpg" alt="Headline underline" />
           </h1>
-			</div>
+        </div>
 
-			<div class="row gallery-container no-gutters">
-				<div class="col-md-6 col-xl-3">
-					<img class="img1" src="assets/images/img1.jpg" alt="" />
+        <div class="row gallery-container no-gutters">
+          <div class="col-md-6 col-xl-3">
+            <img class="img1" src="assets/images/img1.jpg" alt="" />
           </div>
-					<div class="col-md-6 col-xl-4 mobile-gap">
-						<img class="img2" src="assets/images/img2.jpg" alt="" />
-						<img class="img3" src="assets/images/img3.jpg" alt="" />
+          <div class="col-md-6 col-xl-4">
+            <img class="img2" src="assets/images/img2.jpg" alt="" />
+            <img class="img3" src="assets/images/img3.jpg" alt="" />
           </div>
-						<div class="col-md-12 col-xl-5">
-							<img class="img4" src="assets/images/img4.jpg" alt="" />
-							<img class="img5" src="assets/images/img5.jpg" alt="" />
-							<img class="img6" src="assets/images/img6.jpg" alt="" />
+          <div class="col-md-12 col-xl-5">
+            <img class="img4" src="assets/images/img4.jpg" alt="" />
+            <img class="img5" src="assets/images/img5.jpg" alt="" />
+            <img class="img6" src="assets/images/img6.jpg" alt="" />
           </div>
-						</div>
-		</section>
-	</main>
-	<footer>
-		<section class="social-media">
-			<div class="group">
-				<h1>Stay in touch</h1>
-				<a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
-				<a href="https://www.facebook.com/"><i class="fab fa-facebook"></i></a>
-				<a href="https://twitter.com/"><i class="fab fa-twitter"></i></a>
-			</div>
-		</section>
-		<section class="copyright">
-			<p>© 2020 - King Gym All Rights Reserved</p>
-		</section>
-	</footer>
-	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-		integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
-	</script>
-	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
-		integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous">
-	</script>
-</body>
-
+        </div>
+      </section>
+    </main>
+    <footer>
+      <section class="social-media">
+        <div class="group">
+          <h1>Stay in touch</h1>
+          <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+          <a href="https://www.facebook.com/"><i class="fab fa-facebook"></i></a>
+          <a href="https://twitter.com/"><i class="fab fa-twitter"></i></a>
+        </div>
+      </section>
+      <section class="copyright">
+        <p>© 2020 - King Gym All Rights Reserved</p>
+      </section>
+    </footer>
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
 <!-- <div class="row">
               <div class="col-3">
