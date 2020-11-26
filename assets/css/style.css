@@ -69,8 +69,14 @@ input {
 
 /* START -------------------------------------------------------- Navbar style */
 
-.navbar {
+.transparent {
   background-color: transparent;
+}
+.second-bg {
+  background-color: #333;
+}
+.active {
+  text-decoration: underline;
 }
 .logo img {
   height: 94.125px;
@@ -368,53 +374,56 @@ h1 span {
 /* END ---------------------------------------------------------- Testimonials style */
 
 /* START -------------------------------------------------------- Gallery style */
-.gallery-headline{
-    width: 2.9em;
-    margin-left:30px !important;
+.gallery-headline {
+  width: 2.9em;
+  margin-left: 30px !important;
 }
-.gallery-tricolor{
-    right: 0.36em;
-    width: 1.5em;
-    bottom: 6px;
+.gallery-tricolor {
+  right: 0.36em;
+  width: 1.5em;
+  bottom: 6px;
 }
-.gallery-container{
-    width: 90%;
-    margin: 0 auto;
+.gallery-container {
+  width: 90%;
+  margin: 0 auto;
 }
-.gallery-container img{
-    object-fit: cover;
-}
-
-
-.img1:hover{
-    transform: scale(1.2);
-}
-.img1{
-    height: 100%;
-    width: 100%;
+.gallery-container img {
+  object-fit: cover;
 }
 
-.img1, .img2, .img3, .img4{
-    padding-right: 10px;
+.img1:hover {
+  transform: scale(1.2);
 }
-.img3, .img6{
-    padding-top: 10px;
-}
-.img2 , .img3, .img6{
-    height: 50%;
-    width: 100%;
+.img1 {
+  height: 100%;
+  width: 100%;
 }
 
-.img4, .img5{
-    height: 50%;
-    width: 50%;
+.img1,
+.img2,
+.img3,
+.img4 {
+  padding-right: 10px;
 }
-.img5{
-    float: right;
-    
+.img3,
+.img6 {
+  padding-top: 10px;
+}
+.img2,
+.img3,
+.img6 {
+  height: 50%;
+  width: 100%;
 }
 
-
+.img4,
+.img5 {
+  height: 50%;
+  width: 50%;
+}
+.img5 {
+  float: right;
+}
 
 /* END ---------------------------------------------------------- Gallery style */
 
@@ -458,9 +467,9 @@ h1 span {
   .video-overlay {
     top: 140px;
   }
-   /* footer */
-  .copyright p{
-      font-size: .7em;
+  /* footer */
+  .copyright p {
+    font-size: 0.7em;
   }
 }
 
@@ -562,32 +571,35 @@ h1 span {
     width: 100%;
   }
   /* gallery */
-  .img1, .img2, .img3{
-      padding-right: 0px;
+  .img1,
+  .img2,
+  .img3 {
+    padding-right: 0px;
   }
-    .img1, .img3{
-        padding-bottom: 10px;
-    }
+  .img1,
+  .img3 {
+    padding-bottom: 10px;
+  }
 
   /* footer */
-  .social-media h1{
-      font-size: 1.5em;
+  .social-media h1 {
+    font-size: 1.5em;
   }
-  .social-media i{
-      font-size: 2em;
+  .social-media i {
+    font-size: 2em;
   }
 }
 
 @media only screen and (max-width: 1199px) {
-
-.img2, .img3{
+  .img2,
+  .img3 {
     padding-right: 0;
-}
-.img1, .img3{
+  }
+  .img1,
+  .img3 {
     padding-bottom: 10px;
+  }
 }
-}
-
 
 @media only screen and (min-width: 1100px) {
   .modal {
@@ -599,8 +611,8 @@ h1 span {
     margin-right: 3em;
   }
   /* gallery */
-  .gallery-container{
-      width: 75%;
+  .gallery-container {
+    width: 75%;
   }
 }
 
@@ -658,20 +670,16 @@ h1 span {
   }
 
   /* gallery */
-  
- #gallery-scale {
-    margin-left:30px;
-   }
 
-  /* footer */
-  .copyright p{
-   font-size: 1.5vw;
+  #gallery-scale {
+    margin-left: 30px;
   }
 
-  
-
-
-
+  /* footer */
+  .copyright p {
+    font-size: 1.5vw;
+  }
+}
 
 @media only screen and (min-width: 1900px) {
   /* modal */
@@ -703,10 +711,8 @@ h1 span {
 
   /* gallery */
   #gallery-scale {
-    margin-left:70px;
+    margin-left: 70px;
   }
-   
-  
 }
 
-/* END ------------------------------------------------------------ Media query */ 
+/* END ------------------------------------------------------------ Media query */
