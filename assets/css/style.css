@@ -391,9 +391,6 @@ h1 span {
   object-fit: cover;
 }
 
-.img1:hover {
-  transform: scale(1.2);
-}
 .img1 {
   height: 100%;
   width: 100%;
@@ -458,6 +455,23 @@ h1 span {
 }
 
 /* END ---------------------------------------------------------- Footer style */
+
+/* START -------------------------------------------------------- Join style */
+
+iframe {
+  max-width: 50%;
+  margin-top: 10px;
+}
+.join-form {
+  width: 45%;
+  float: left;
+  margin-top: 50px;
+}
+.form-check-input {
+  margin-bottom: 0;
+  margin-right: -1px;
+}
+/* END ---------------------------------------------------------- Join style */
 
 /* START -------------------------------------------------------- Media query */
 
@@ -587,6 +601,14 @@ h1 span {
   }
   .social-media i {
     font-size: 2em;
+  }
+
+  /* join form */
+  .join-form {
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 50px;
+    float: none;
   }
 }
 
