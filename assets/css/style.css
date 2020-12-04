@@ -460,16 +460,22 @@ h1 span {
 
 iframe {
   max-width: 50%;
-  margin-top: 10px;
+  margin-top: 45px;
 }
 .join-form {
-  width: 45%;
+  width: 38%;
   float: left;
   margin-top: 50px;
+  margin-right: 5%;
+  margin-left: 5%;
 }
 .form-check-input {
-  margin-bottom: 0;
-  margin-right: -1px;
+  width: 70px;
+}
+
+/* join page footer */
+.reduced-margin {
+  margin-top: 36px;
 }
 /* END ---------------------------------------------------------- Join style */
 
@@ -487,12 +493,16 @@ iframe {
   }
 }
 
-@media only screen and (max-width: 575px) {
+@media only screen and (max-width: 575.9px) {
   /* modal form */
 
   #fname,
   #lname {
     width: 99%;
+  }
+  /* join page */
+  .form-check-label {
+    width: 110px;
   }
 }
 
@@ -603,12 +613,20 @@ iframe {
     font-size: 2em;
   }
 
-  /* join form */
+  /* join page */
   .join-form {
     width: 90%;
     margin: 0 auto;
     margin-top: 50px;
     float: none;
+  }
+
+  iframe {
+    max-width: 96%;
+    margin-top: 35px;
+  }
+  .map {
+    text-align: center;
   }
 }
 
@@ -701,6 +719,11 @@ iframe {
   .copyright p {
     font-size: 1.5vw;
   }
+  /* join page */
+  .join-position {
+    width: 80%;
+    margin: 0 auto;
+  }
 }
 
 @media only screen and (min-width: 1900px) {
@@ -734,6 +757,11 @@ iframe {
   /* gallery */
   #gallery-scale {
     margin-left: 70px;
+  }
+  /* join page */
+  .join-position {
+    width: 60%;
+    margin: 0 auto;
   }
 }
 
