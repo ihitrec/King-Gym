@@ -104,6 +104,24 @@ ul {
 .navbar-collapse {
   text-align: center;
 }
+.footer-collapse{
+    color:white;
+    width:auto;
+    display: none;
+    margin-top:40px;
+}
+.footer-collapse h1{
+    font-size:26px;
+    display:inline-block;
+    margin-right:5px;
+}
+.footer-collapse a{
+    border:none;
+    font-size:33px;
+    color:white;
+    padding:5px;
+}
+
 
 /* END ---------------------------------------------------------- Navbar style */
 
@@ -484,6 +502,15 @@ iframe {
 /* Mobile responsiveness */
 
 @media only screen and (max-width: 450px) {
+  /* navbar */
+  .footer-collapse h1{
+      font-size:21px;
+  }
+  .footer-collapse a{
+      font-size:28px;
+  }
+
+  /* video overlay */
   .video-overlay {
     top: 140px;
   }
@@ -506,7 +533,7 @@ iframe {
   }
 }
 
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 767.9px) {
   /* navbar */
 
   .toggler-bg-color {
@@ -523,12 +550,14 @@ iframe {
     margin-right: 16px;
     margin-top: 22px;
   }
-  .navbar-collapse {
+  .max-height {
     background-color: #333;
     height: 100vh !important;
   }
+  .medium-height{
+      height: 250px !important;
+  }
   li a {
-    border-right: none;
     border: 2px solid #d98100;
     border-radius: 20px;
   }
@@ -536,8 +565,11 @@ iframe {
     margin: 40px auto 0;
     width: 200px;
   }
-  li a:hover {
+  .nav-item a:hover {
     background-color: #d98100;
+  }
+  .footer-collapse{
+      display:initial;
   }
 
   /* video */
