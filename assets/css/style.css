@@ -198,7 +198,7 @@ ul {
 /* END ---------------------------------------------------------- Video style */
 
 /* START -------------------------------------------------------- About style */
-
+.membership-headline{}
 /* headline */
 .about-headline {
   width: 3.05em;
@@ -496,6 +496,19 @@ iframe {
   margin-top: 36px;
 }
 /* END ---------------------------------------------------------- Join style */
+
+/* START -------------------------------------------------------- Membership style */
+.membership-headline{
+width:5em;
+}
+.membership-tricolor{
+bottom: 7px;
+right: 6px;
+width: 3.56em;
+}
+
+
+/* END ---------------------------------------------------------- Membership style */
 
 /* START -------------------------------------------------------- Media query */
 
