@@ -506,7 +506,15 @@ bottom: 7px;
 right: 6px;
 width: 3.56em;
 }
-
+.card-body{
+    text-align:center;
+}
+.card-body p{
+    font-family:"Montserrat"
+}
+/* .card-body h1{
+    font-size:3em;
+} */
 
 /* END ---------------------------------------------------------- Membership style */
 
