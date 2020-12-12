@@ -198,7 +198,7 @@ ul {
 /* END ---------------------------------------------------------- Video style */
 
 /* START -------------------------------------------------------- About style */
-.membership-headline{}
+
 /* headline */
 .about-headline {
   width: 3.05em;
@@ -498,6 +498,9 @@ iframe {
 /* END ---------------------------------------------------------- Join style */
 
 /* START -------------------------------------------------------- Membership style */
+
+/* headline */
+
 .membership-headline{
 width:5em;
 }
@@ -506,15 +509,60 @@ bottom: 7px;
 right: 6px;
 width: 3.56em;
 }
-.card-body{
-    text-align:center;
+
+/* memberships */
+
+.membership-row{
+    width: 75%;
+    margin: 0 auto;
 }
-.card-body p{
-    font-family:"Montserrat"
+.center{
+    width: 220px;
+    margin: 20px auto;
 }
-/* .card-body h1{
-    font-size:3em;
-} */
+.membership-img{
+    width: 220px;
+    border-radius: 20px 20px 0 0;
+}
+.membership-container{
+    width: 220px;
+    border-radius: 0 0 20px 20px;
+     text-align:center;
+}
+.price{
+    margin-top: 20px;
+    margin-bottom: 0px;
+    font-size: 1.25em;
+}
+.membership-container h1{
+    font-family:"Yellowtail";
+}
+.membership-container p {
+    font-family:"Montserrat";
+    color: #5b5959;
+}
+
+/* colors */
+
+.casual{
+    color:#4B85A8 !important;
+}
+.moderate {
+    color: #D98100 !important;
+}
+.king {
+    color:#E1B200 !important;
+}
+.membership-border-casual{
+    border: 1px solid #4B85A8;
+}
+.membership-border-moderate{
+    border: 1px solid #D98100;
+}
+.membership-border-king{
+    border: 1px solid #E1B200
+}
+
 
 /* END ---------------------------------------------------------- Membership style */
 
@@ -798,14 +846,13 @@ width: 3.56em;
   /* testimonials */
   .testimonials-container {
     transform: scale(1.5);
+    margin-bottom: 100px;
   }
   .scale-row {
     width: 80%;
     margin: 7em auto;
   }
-  .testimonials-container {
-    margin-bottom: 100px;
-  }
+ 
 
   /* gallery */
   #gallery-scale {
@@ -815,6 +862,12 @@ width: 3.56em;
   .join-position {
     width: 60%;
     margin: 0 auto;
+  }
+  /* membership page */
+   .membership-scale {
+    transform: scale(1.5);
+    margin-top: 50px;
+    margin-bottom: 30px;
   }
 }
 
