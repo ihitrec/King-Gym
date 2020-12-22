@@ -1,4 +1,4 @@
-<!-- Add ami responsive -->
+![Responsive preview](assets/images/images_README/Responsive.jpg)
 
 # King Gym
 
@@ -8,6 +8,9 @@ This is the first project in Code Institute Full Stack Developer program based o
 
 ## UX
 
+### Main goals
+- Design a website for a new gym in Dublin city center. Implement a simple and clear design that makes it easy to access all important information outlined in the user stories.
+- Make the website responsive across all devices and browsers.
 ### User stories
 
 1. As a potential **new** gym customer I want to easily find information on the following: locations, pricing, customer testimonials and contact details. Having an image gallery that showcases the look of the gym as well as the people that are attending is a plus. Idealy there would be an option to book a free training before having to commit.
@@ -20,11 +23,13 @@ This is the first project in Code Institute Full Stack Developer program based o
 - [Memberships](assets/images/images_README/memberships.png)
 - [Signup](assets/images/images_README/signup.png)
 
-<!-- ### Fonts -->
+### Fonts
 
-### Colours
+> A script-type font Yellowtail was used for main headings which works well with the tricolor underline. The font differs from the one used in the frameworks since it was not available on Google Fonts. Nixie One was supposed to be the main paragraph font but it has limited weight options. It is still used for secondary text like forms. Montserrat was chosen as main paragraph font as it is more customisable and has a nice contrast with the main headings. 
 
-> I have decided to have three gym locations with different colour themes. I have chosen a colour pallete which worked well and was used across most pages.
+### Colors
+
+> I have decided to have three gym locations with different color themes. I have chosen a color pallete which worked well and was used across most pages.
 
 <!-- ## Features -->
 
@@ -57,11 +62,11 @@ This is the first project in Code Institute Full Stack Developer program based o
 
 ### Code validation
 
-> All code will be tested using W3C validation service.
+> All HTML and CSS has been validated using the W3C validator with no errors.
 
 ### Accessibility
 
-> Website will be tested using WAVE accessibility assesment tool.
+> Website was tested by WAVE accessibility assesment tool. There were no major issues apart from a few contrast errors. The colors were not changed since the backround of each location would have to be changed significantly to pass the WCAG standards.
 
 ### Optimisation
 
@@ -79,7 +84,7 @@ This is the first project in Code Institute Full Stack Developer program based o
 
 ### Content
 
-> All textual content was made up and written by me
+> All textual content was made up and written by me.
 
 ### Media
 
