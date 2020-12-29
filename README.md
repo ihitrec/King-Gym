@@ -16,13 +16,13 @@ This is the first project in Code Institute Full Stack Developer program based o
 
 ### Research and design
 
-> .
+>
 
 ### User stories
 
-1. As a potential **new** gym customer I want to easily find information on the following: locations, pricing, customer testimonials and contact details. Having an image gallery that showcases the look of the gym as well as the people that are attending is a plus. Idealy there would be an option to book a free training before having to commit.
+1. As a potential **new** gym customer I want to easily find information on the following: locations, pricing, customer testimonials and contact details. Having an image gallery that showcases the look of the gym as well as the people that are attending is a plus. Ideally there would be an option to book a free training before having to commit.
 
-2. As an **exisisting** gym user I want to get information such as working hours and gym class schedule.
+2. As an **existing** gym user I want to get information such as working hours and gym class schedule.
 
 ### Wireframes
 
@@ -36,11 +36,11 @@ This is the first project in Code Institute Full Stack Developer program based o
 
 ### Colors
 
-> I have decided to have three gym locations with different color themes. I have chosen a color pallete which worked well and was used across most pages.
+> I have decided to have three gym locations with different color themes. I have chosen a color palette which worked well and was used across most pages.
 
 <!-- ## Features -->
 
-## Tehnologies used
+## Technologies used
 
 ##### Languages and frameworks
 
@@ -56,8 +56,9 @@ This is the first project in Code Institute Full Stack Developer program based o
 - [Google Fonts](https://fonts.google.com/) - source of all fonts on the website
 - [Adobe XD](https://www.adobe.com/ie/products/xd.html) - used for frameworks
 - [Am I responsive](http://ami.responsivedesign.is/) - website look comparison above the project title
-- [Color palletes](https://colorpalettes.net/) - inspiration from which the main pallete theme was taken
+- [Color palettes](https://colorpalettes.net/) - inspiration from which the main palette theme was taken
 - [Ezgif](https://ezgif.com/) - Image resizing and optimisation
+
 ## Testing
 
 ### Responsiveness
@@ -75,13 +76,13 @@ This is the first project in Code Institute Full Stack Developer program based o
 
 ### Accessibility
 
-> Website was tested by WAVE accessibility assesment tool. There were no major issues apart from a few contrast errors. The colors were not changed since the backround of each location would have to be changed significantly to pass the WCAG standards. During testing it was shown that link and iframe tags do not have sufficient description of the content. This was fixed by adding aria-label and title attributes. Each image has alt text and semantic HTML was used when possible.
+> Website was tested by WAVE accessibility assessment tool. There were no major issues apart from a few contrast errors. The colors were not changed since the background of each location would have to be changed significantly to pass the WCAG standards. During testing it was shown that link and iframe tags do not have sufficient description of the content. This was fixed by adding aria-label and title attributes. Each image has alt text and semantic HTML was used when possible.
 
 
 ### Optimisation
 
 - Images were converted to JPG to make the load time quicker.
-- Meta discription tag was added for better SEO.
+- Meta description tag was added for better SEO.
 
 > Website was tested using Lighthouse in Chrome DevTools. It achieved a pretty good score of above 90 for each category. It was shown that certain images hinder the load time and they were resized which saved about 1.5 seconds loading time.
 ### Bugs
@@ -103,7 +104,7 @@ This is the first project in Code Institute Full Stack Developer program based o
 - All icons were taken from [Flaticon](https://www.flaticon.com/) under a commercial licence.
 - All bigger media was taken from [Envato Elements](https://elements.envato.com/) under a commercial licence.
 - Main page video is edited by me using different Envato videos and combining them with transitions.
-### Aknowledgements
+### Acknowledgements
 
 - My mentor Victor Miclovich for his unique insights.
 - Code Institute staff and slack community which provided advice, project examples and the occasional motivational boost.
