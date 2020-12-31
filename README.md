@@ -98,6 +98,8 @@ The website was designed for a laptop screen size first. Each section was then f
 
 All HTML and CSS has been validated using the W3C validator with no errors.
 
+> A warning is shown for the HTML part of the join page. It is because there are no headings for the two sections. It was not changed since the documentation states that it is not always necessary to include a heading. 
+
 ### Accessibility
 
 Website was tested by WAVE accessibility assessment tool. There were no major issues apart from a few contrast errors. The colors were not changed since the background of each location would have to be changed significantly to pass the WCAG standards. During testing it was shown that link and iframe tags do not have sufficient description of the content. This was fixed by adding aria-label and title attributes. Each image has alt text and semantic HTML was used when possible.
